@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/squad_controller.gd" id="1_script"]
+
+[node name="SquadController" type="Node3D"]
+script = ExtResource("1_script")
+
+[node name="CameraMount" type="Node3D" parent="."]
+transform = Transform3D(1, 0, 0, 0, 0.866025, 0.5, 0, -0.5, 0.866025, 0, 5, 4)
+
+[node name="Camera3D" type="Camera3D" parent="CameraMount"]
+current = true
+fov = 70.0
+
